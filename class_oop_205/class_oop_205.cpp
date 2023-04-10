@@ -8,31 +8,43 @@ public:
     void tampil() {
         cout << "NIM= " << nim;
         cout << "\nNama= " << nama;
-
     }
 };
 
-class MataKuliah {
+class Matakuliah {
 private:
     int sks;
     string kode;
-    string namaMk;
+    string namaMK;
 public:
-    void inputMk() {
-        cout << "\nMasukan jumlah SKS= ";
+    void inputMK() {
+
+        cout << "\nMasukkan jumlah SKS= ";
         cin >> sks;
-        cout << "\nMasukan Kode MK= ";
+        cout << "Masukkan Kode MK= ";
         cin >> kode;
-        cout << "\nMasukan Nama MK= ";
-        cin >> namaMk;
+        cout << "Masukkan Nama MK= ";
+        cin >> namaMK;
     }
 
+    void tampilMK() {
+        cout << "\nJumlah sks= " << sks;
+        cout << "\nKode MK= " << kode;
+        cout << "\nNama MK= " << namaMK << endl;
+    }
 };
 
-void tampilMK() {
-    cout << "\nJumlah sks= " << sks;
-    cout << "\nKode MK= " << kode;
-    cout << "\nnama MK= " << namaMK << endl;
-}
- 
+int main() {
+    Mahasiswa mhs;
+    Matakuliah mk;
 
+    cout << "Nim Mahasiswa= ";
+    cin >> mhs.nim;
+    cout << "Nama Mahasiswa= ";
+    cin >> mhs.nama;
+
+    mk.inputMK();
+    mhs.tampil();
+    mk.tampilMK();
+
+}
