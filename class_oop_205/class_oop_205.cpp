@@ -7,7 +7,7 @@ public:
     string nama;
     void tampil() {
         cout << "NIM= " << nim;
-        cout "\nNama= " << nama;
+        cout << "\nNama= " << nama;
 
     }
 };
@@ -15,7 +15,7 @@ public:
 class MataKuliah {
 private:
     int sks;
-    sting kode;
+    string kode;
     string namaMk;
 public:
 };
