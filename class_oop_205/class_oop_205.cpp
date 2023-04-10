@@ -12,4 +12,13 @@ public:
     }
 };
 
+class MataKuliah {
+private:
+    int sks;
+    sting kode;
+    string namaMk;
+public:
+};
+
+
 
